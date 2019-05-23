@@ -1,8 +1,11 @@
 {
   "name": "hashlib",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple wrapper around node crypto hash libraries for demonstration purposes",
   "main": "index.js",
+  "repository": {
+    "git": "git@github.com:urma/hashlib.git"
+  },
   "scripts": {
     "test": "mocha",
     "coverage": "nyc --reporter=lcov --reporter=text-summary npm run test",
