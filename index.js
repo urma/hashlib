@@ -24,4 +24,10 @@ module.exports = {
   sha512: function(input, encoding='hex') {
     return __hash('sha512', input, encoding)
   },
+  ripemd: function(input, encoding='hex') {
+    return __hash('ripemd', input, encoding)
+  },
+  whirlpool: function(input, encoding='hex') {
+    return __hash('whirlpool', input, encoding)
+  },
 }
