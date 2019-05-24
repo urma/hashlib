@@ -1,11 +1,4 @@
 steps:
-  - command: "npm install && npm run coverage > hashlib-test.tap"
+  - command: "npm install && npm run coverage"
     label: "npm-test"
     artifact_paths: "coverage/**/*"
-  - label: annotate
-    plugins:
-      - bugcrowd/test-summary#v1.9.0:
-          inputs:
-            - label: mocha
-              artifact_path: hashlib-test.tap
-              type: tap
