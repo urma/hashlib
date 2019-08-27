@@ -1,6 +1,0 @@
-steps:
-  - label: "npm-test"
-    command: "npm install && npm run coverage"
-    artifact_paths: "coverage/**/*"
-  - label: "sca"
-    command: "npm install && npm audit"
